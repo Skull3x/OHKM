@@ -14,7 +14,7 @@ class Main extends PluginBase implements Listener{
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
   
-  public function onDamage(EntityDamageEvent $action){
+  public static function onDamage(EntityDamageEvent $action){
     if($action instanceof EntityDamageByEntityEvent){
       $m = $action->getEntity();
       $p = $action->getDamager();
