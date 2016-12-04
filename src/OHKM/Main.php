@@ -5,6 +5,7 @@ use pocketmine\entity\Entity;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
+use pocketmine\entity\Creature;
 class Main extends PluginBase implements Listener{
 
 public function onEnable(){
