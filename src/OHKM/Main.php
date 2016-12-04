@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener{
     if($action instanceof EntityDamageByEntityEvent){
       $m = $action->getEntity();
       $p = $action->getDamager();
-      if($m instanceof Creature){
+      if($m instanceof Creature && $p instanceof Player){
         $m->kill();
       }
     }
